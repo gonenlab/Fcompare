@@ -3,11 +3,11 @@
 ### compare structure factors from x-ray structures cif file to cif file
 
 
-###########################
-##files
+##############################################
+##files to process
 file1 = "1.cif"
 file2 = "4axt-sf.cif"
-############################
+##############################################
 
 
 output = open("CIF-CIF.csv","w")

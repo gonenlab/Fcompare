@@ -4,13 +4,17 @@
 ### prepare the mtz dump file using the following shell command
 ###     phenix.mtz.dump -f s -c [filename] > [output_filename]
 
+#########################################################
 ## User variables 
 dumpfile = "mosflm_stills.txt"
 dumpfile2 = "mosflm_rot.txt"
 output = open("MTZ-MTZ.csv","w")
 fcol1 = 10          # which column contains F 1st column in number 0 1st file
 fcol2 = 3           # which column contains F 1st column in number 0 2nd file
-## open MTZdumped cif file and make dictionaries 
+#########################################################
+
+## open MTZdumped cif file and make dictionaries
+
 
 dumpdatadic = {}
 with open(dumpfile) as reffile:

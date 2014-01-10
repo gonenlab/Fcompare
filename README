@@ -4,13 +4,13 @@
 
 Matt Iadanza 2015-01-10
 
-Each program has a section of variables that the user has to edit before running.
-Maybe someday Matt will integrate all of these into one shiny program. 
+Each program has a section of varibles that the user has to edit before running.
 
 
-* cif files: from the pdb or our home source - manually remove any header information
 
-* MTZdump files:  To prepare one of these files from a MTZ run this command from the SBGrid unix shell:
+* cif files: from the pdb and our home source manually remove any header information
+
+* MTZdump files:  To prepare one of these files from a MTZ run this command from the unix shell:
             
             phenix.mtz.dump -f s -c [mtz_filename] > [output_filename]
 

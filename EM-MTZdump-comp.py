@@ -4,11 +4,14 @@
 ### prepare the mtz dump file using the following shell command
 ###     phenix.mtz.dump -f s -c [filename] > [output_filename]
 
-## files
+###################################################
+## User edited variables
 emfile = "microED_dataset.txt"
 dumpfile = "mosflm_rot.txt"
 fcol = 3    # which column in MTZdump file contains F values 1st column = 0
 output = open("EM-MTZ.csv","w")
+###################################################
+
 
 ## open MTZdumped cif file and make dictionaries 
 

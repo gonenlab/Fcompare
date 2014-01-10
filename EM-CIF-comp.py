@@ -6,10 +6,12 @@ import math
 
 output = open("xraycom.csv","w")
 
+#######################################
 #### files to work on
+emfile = "microED_dataset.txt"      # microED file
+ciffile = "inhouse_lysozyme.cif"    # cif file
+#######################################
 
-emfile = "microED_dataset.txt"
-ciffile = "inhouse_lysozyme.cif"
 ## open xray sructure cif file and make dictionaries 
 
 xrayspotsdic = {}

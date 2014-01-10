@@ -6,10 +6,12 @@ import math
 
 output = open("ememcomp.csv","w")
 
+###########################################
 #### files to work on
+emfile = "123usf_merged.txt"    # microED file 1
+emfile2 = "f_mergedint_BGS.txt" # microED file 2
+##########################################
 
-emfile = "123usf_merged.txt"
-emfile2 = "f_mergedint_BGS.txt"
 ## open xray sructure cif file and make dictionaries 
 
 file1dic = {}
