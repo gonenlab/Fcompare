@@ -1,0 +1,25 @@
+*******************************************************************************
+** Programs to compare structure factors for a variety of wonky file formats **
+*******************************************************************************
+
+Matt Iadanza 2015-01-10
+
+Each program has a section of variables that the user has to edit before running.
+Maybe someday Matt will integrate all of these into one shiny program. 
+
+
+* cif files: from the pdb or our home source - manually remove any header information
+
+* MTZdump files:  To prepare one of these files from a MTZ run this command from the SBGrid unix shell:
+            
+            phenix.mtz.dump -f s -c [mtz_filename] > [output_filename]
+
+The column that contains the structure factors seems to be different every time so programs that use them have a variable that defines which column contains the structure factor.
+    
+* microED data from matt's programs: the output from any of Matt's merging programs which is tab delineated in the following format:
+
+    h k l F sigF I sigI
+    
+    
+Each program outputs a csv file with each spot that appears in both input files, the F value from each and the ratio of the two.
+ENJOY!
